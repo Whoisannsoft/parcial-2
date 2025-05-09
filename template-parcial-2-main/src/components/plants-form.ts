@@ -1,5 +1,5 @@
 import { store } from '../flux/Store';
-import {  } from '../flux/Actions';
+import { Actions } from '../flux/Actions';
 
 class ProductForm extends HTMLElement {
   constructor() {
@@ -16,9 +16,9 @@ class ProductForm extends HTMLElement {
     this.shadowRoot!.innerHTML = `
       <div class="bg-white p-6 rounded-lg shadow-lg w-full max-w-md mx-auto">
         <h2 class="text-2xl font-semibold text-center mb-4">incluir plantita </h2>
-        <input type="text" id="productName" class="p-3 border border-gray-300 rounded-md w-full mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Nombre del producto">
-        <input type="number" id="productPrice" class="p-3 border border-gray-300 rounded-md w-full mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Precio del producto">
-        <button id="addProductBtn" class="bg-blue-500 text-white p-3 w-full rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Agregar</button>
+        <input type="text" id="Nombre planta" class="p-3 border border-gray-300 rounded-md w-full mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Nombre de la planta">
+        <input type="number" id="Nombre cientifico" class="p-3 border border-gray-300 rounded-md w-full mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" placeholder="Nombre cientifico">
+        <button id="addplant" class="bg-blue-500 text-white p-3 w-full rounded-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-500">Agregar planta</button>
       </div>
     `;
   }
@@ -39,4 +39,4 @@ class ProductForm extends HTMLElement {
   }
 }
 
-customElements.define('product-form', ProductForm);
+customElements.define('plants-form', ProductForm);
