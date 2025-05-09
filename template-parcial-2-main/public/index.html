@@ -4,10 +4,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="http://192.168.131.101:8080/dca/api/plants"></script>
     <title>Project Demo</title>
-</head>
+</head class="bg-gray-100 text-gray-900 font-sans">
 <body>
     <root-element></root-element>
-    <script type="module" src="/bundle.js"></script>
+    <script type="module" src="/index.js"></script>
+     
+  <div class="container mx-auto p-6 flex flex-col items-center">
+    <app-header></app-header>
+    <product-form></product-form>
+    <product-list class="w-full flex justify-center content-center"></product-list>
+  </div>
+
+  <script type="module" src="src/index.ts"></script>
 </body>
 </html>
