@@ -4,11 +4,12 @@ customElements.define('root-element', Root);
 
 import './components/product-form';
 import './components/product-list';
-import { requestToAPI } from './api/request';
-import { store } from './store/store';
-import { setProducts } from './store/actions';
+import { requestToAPI } from './Api/request';
+import { store } from './flux/Store';
+import {  } from './flux/Actions';
+import { getPlants } from "./services/Plants";
 
 
 requestToAPI().then(data => {
-  store.dispatch(setProducts(data)); 
+  store.dispatch(getPlants(data)); 
 });
